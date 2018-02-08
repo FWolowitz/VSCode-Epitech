@@ -11,9 +11,28 @@
 		"description": "Code snippet for 'main' function"
 	},
 	"string": {
-		"prefix": "string",
+		"prefix": "str",
 		"body": "std::string ${1:name} = \"${2:content}\";",
 		"description": "Code snippet for 'string'"
+	},
+	"getter": {
+		"prefix": "getter",
+		"body": [
+			"${1:Type} ${2:Class::Method}() const",
+			"{",
+			"return (this->${3:Value});",
+			"}"
+		],
+		"description": "Code snippet for a getter function"
+	},
+	"setter": {
+		"prefix": "setter",
+		"body": [
+			"void ${1:Class::Method}(${2:Type} ${3:New Value})",
+			"{",
+			"${4:Value} = ${3:New Value};",
+			"}"
+		],
 	},
 	"inti": {
 		"prefix": "inti",
@@ -23,7 +42,7 @@
 	"for": {
 		"prefix": "for",
 		"body": [
-			"for (${1:int} ${2:i} = ${3:0}; ${i} < ${4:1}; ${i}++)",
+			"for (${1:int} ${2:i} = ${3:0}; ${2:i} < ${4:1}; ${2:i}++)",
 			"{",
 			"}"
 		],
