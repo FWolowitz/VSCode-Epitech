@@ -1,48 +1,73 @@
 {
-	// Place your snippets for makefile here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-
-	"makefile": {
-		"prefix": "makefile",
+	"cmakefile": {
+		"prefix": "cmakefile",
 		"body": [
-			"CC\t=\tg++",
+			"CC\t=\tgcc",
 			"",
 			"RM\t=\trm -f",
 			"",
-			"SRC\t=\t{$1:File}.cpp",
+			"SRC\t=\t${1:File}.c",
 			"",
-			"OBJ\t=\t$(SRC:.cpp=.o)",
+			"OBJ\t=\t$(SRC:.c=.o)",
 			"",
 			"CFLAGS\t=\t-Iinclude -Wall -Wextra -Werror",
 			"",
-			"NAME\t=\t{$2:Binary Name}",
+			"NAME\t=\t${2:Binary Name}",
 			"",
-			"all:\t$(NAME)",
+			"all:\t\t$(NAME)",
 			"",
 			"$(NAME):\t$(OBJ)",
 			"\t\t$(CC) $(OBJ) -o $(NAME)",
 			"",
 			"clean:",
-			"\t$(RM) $(OBJ)",
+			"\t\t$(RM) $(OBJ)",
 			"",
-			"fclean:\tclean",
-			"\t$(RM) $(NAME)",
+			"fclean:\t\tclean",
+			"\t\t$(RM) $(NAME)",
 			"",
 			"re:\t\tfclean all",
 			"",
 			".PHONY: all clean fclean re"
 		],
-		"description": "Code snippet for Makefile"
+		"description": "Code snippet for C Makefile"
+	},
+	"cppmakefile": {
+		"prefix": "cppmakefile",
+		"body": [
+			"CC\t\t=\tg++",
+			"",
+			"RM\t\t=\trm -f",
+			"",
+			"SRC\t\t=\t${1:File}.cpp",
+			"",
+			"OBJ\t\t=\t$(SRC:.cpp=.o)",
+			"",
+			"CPPFLAGS\t=\t-Iinclude -Wall -Wextra -Werror",
+			"",
+			"NAME\t\t=\t${2:Binary Name}",
+			"",
+			"all:\t\t$(NAME)",
+			"",
+			"$(NAME):\t$(OBJ)",
+			"\t\t$(CC) $(OBJ) -o $(NAME)",
+			"",
+			"clean:",
+			"\t\t$(RM) $(OBJ)",
+			"",
+			"fclean:\t\tclean",
+			"\t\t$(RM) $(NAME)",
+			"",
+			"re:\t\tfclean all",
+			"",
+			".PHONY: all clean fclean re"
+		],
+		"description": "Code snippet for C++ Makefile"
+	},
+	"SFMLFlags": {
+		"prefix": "sfml",
+		"body": [
+			"SFML\t=\t-lsfml-graphics -lsfml-window -lsfml-system"
+		],
+		"description": "Code snippet SFML in Makefile"
 	}
 }
