@@ -1,6 +1,8 @@
 # VSCode-Epitech
 VSCode Setup for Epitech
 
+Implement snippets for C++ files and for Makefiles in Visual Studio Code and an update script.
+
 Useful extensions: 
 Download the Nicolas Polomack's extension in the marketplace
 Or
