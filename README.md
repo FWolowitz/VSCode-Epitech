@@ -22,3 +22,8 @@ Install C++ Snippets:
 Go in VSCode, click on the cogwheel, User Snippets and type cpp.json in the search bar. Copy/paste the content of cpp.json in the file.
 Or
 Put the cpp.json file in .config/Code/User/snippets.
+
+Install Makefile Snippets:
+Go in VSCode, click on the cogwheel, User Snippets and type makefile.json in the search bar. Copy/paste the content of makefile.json in the file.
+Or
+Put the makefile.json file in .config/Code/User/snippets.
