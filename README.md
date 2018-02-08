@@ -1,10 +1,6 @@
 # VSCode-Epitech
 VSCode Setup for Epitech
 
-List of useful extensions:
-
-
-
 How to:
 
 Update:
