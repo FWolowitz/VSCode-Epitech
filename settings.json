@@ -1,0 +1,15 @@
+{
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "epitech-c-cpp-headers.username": "",
+    "epitech-c-cpp-headers.login": "",
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": true,
+    "files.autoSave": "afterDelay",
+    "editor.autoIndent": true,
+    "editor.rulers": [
+        79
+    ],
+}
