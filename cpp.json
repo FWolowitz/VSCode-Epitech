@@ -3,7 +3,7 @@
 	"main": {
 		"prefix": "main",
 		"body": [
-			"int main()",
+			"int main(int argc, char *argv)",
 			"{",
 			"\treturn(${1:0});",
 			"}"
@@ -20,7 +20,7 @@
 		"body": [
 			"${1:Type} ${2:Class::Method}() const",
 			"{",
-			"return (this->${3:Value});",
+			"\treturn (this->${3:Value});",
 			"}"
 		],
 		"description": "Code snippet for a getter function"
@@ -30,7 +30,7 @@
 		"body": [
 			"void ${1:Class::Method}(${2:Type} ${3:New Value})",
 			"{",
-			"${4:Value} = ${3:New Value};",
+			"\t${4:Value} = ${3:New Value};",
 			"}"
 		],
 	},
