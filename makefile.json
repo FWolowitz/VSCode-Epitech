@@ -90,7 +90,7 @@
 			"all:\t\ttitle $(NAME)",
 			"",
 			"title:",
-			"\t\t@$(ECHO) $(TEAL)$(BOLD)\"[42sh compilation]\"$(DEFAULT)",
+			"\t\t@$(ECHO) $(TEAL)$(BOLD)\"[${2:Binary Name} compilation]\"$(DEFAULT)",
 			"",
 			"$(NAME):\t$(OBJ)",
 			"\t\t@$(CC) $(OBJ) -o $(NAME) $(CFLAGS) && \\",
