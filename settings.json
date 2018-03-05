@@ -2,15 +2,17 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
+    "window.zoomLevel": -0.001,
     "epitech-c-cpp-headers.username": "",
     "epitech-c-cpp-headers.login": "",
     "editor.tabSize": 8,
     "editor.insertSpaces": false,
     "editor.detectIndentation": true,
     "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
     "editor.autoIndent": true,
     "editor.rulers": [
         79
     ],
-    "window.zoomLevel": -0.001,
 }
