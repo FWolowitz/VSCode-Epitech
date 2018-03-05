@@ -1,0 +1,3 @@
+mv settings.json ~/.config/Code/User
+mv cpp.json ~/.config/Code/User/snippets
+mv makefile.json ~/.config/Code/User/snippets
