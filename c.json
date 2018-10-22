@@ -1,0 +1,177 @@
+{
+	"fori": {
+		"prefix": "fori",
+		"body": [
+			"for (i = 0; i < ${1:length}; i++) {",
+			"\t$2",
+			"}"
+		],
+		"description": "for(i = 0;i < length;i++) {}"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for (${1:index} = ${2:0}; ${1:index} < ${3:length}; ${1:index}++) {",
+			"\t$4",
+			"}"
+		],
+		"description": "for(){}"
+	},
+	"dowhile": {
+		"prefix": "dowhile",
+		"body": [
+			"do {",
+			"\t$1",
+			"} while (${2:TRUE});"
+		],
+		"description": "do{}while();"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ($1) {",
+			"\t$2",
+			"}"
+		],
+		"description": "add if(){}"
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"body": [
+			"if ($1) {",
+			"\t$2",
+			"} else {",
+			"\t$3",
+			"}"
+		],
+		"description": "if{}else{}"
+	},
+	"printf": {
+		"prefix": "printf",
+		"body": [
+			"printf(\"$1\\n\"$2);"
+		],
+		"description": "printf(\"msg\");"
+	},
+	"inti": {
+		"prefix": "inti",
+		"body": [
+			"int i = 0;",
+			"$1"
+		],
+		"description": "int i = 0;"
+	},
+	"char*": {
+		"prefix": "char*",
+		"body": [
+			"char *str = \"$1\""
+		],
+		"description": "char *str = \"msg\""
+	},
+	"include": {
+		"prefix": "inc",
+		"body": [
+			"#include <$1>"
+		],
+		"description": "#include <file>"
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+			"while (${1:true}) {",
+			"\t$2",
+			"}"
+		],
+		"description": "while(){}"
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+			"int main(int ac, char const * const *av)",
+			"{",
+			"\t$1",
+			"\treturn (0);",
+			"}"
+		],
+		"description": "void main(int ac, char const * const *av) {}"
+	},
+	"switch": {
+		"prefix": "switch",
+		"body": [
+			"switch ($1) {",
+			"\tcase $2:",
+			"\t\t$3",
+			"\t\tbreak;",
+			"\tdefault:",
+			"\t\t",
+			"\t\tbreak;",
+			"}"
+		],
+		"description": "switch(){}"
+	},
+	"add void fun(){}": {
+		"prefix": "void",
+		"body": [
+			"void ${1:functionname}(${2:void})",
+			"{",
+			"\t$3",
+			"}"
+		],
+		"description": "add void functionname(void){}"
+	},
+	"add  fun(){}": {
+		"prefix": "function",
+		"body": [
+			"${1:functionname}(${2:void})",
+			"{",
+			"\t$3",
+			"}"
+		],
+		"description": "add @funtionname(@arg){}"
+	},
+	"enum": {
+		"prefix": "enum",
+		"body": [
+			"enum ${1:enumname} {",
+			"\t$2",
+			"};"
+		],
+		"description": "add enum name{}"
+	},
+	"ifndef": {
+		"prefix": "ifndef",
+		"body": [
+			"#ifndef ${1:MACRO}",
+			"#define ${1:MACRO}",
+			"\t$2",
+			"#endif /*${1:MACRO}*/"
+		],
+		"description":"add #ifndef #endif"
+	},
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"struct ${1:name}",
+			"{",
+			"\t$2",
+			"};"
+		],
+		"description": "struct name{}"
+	},
+	"union": {
+		"prefix": "union",
+		"body": [
+			"union ${1:name} {",
+			"\t$2",
+			"};"
+		],
+		"description": "union name{}"
+	},
+	"malloc": {
+		"prefix": "malloc",
+		"body": [
+			"malloc(sizeof(${1:type}) * ${2:number});"
+		],
+		"description": "malloc line"
+	}
+}
