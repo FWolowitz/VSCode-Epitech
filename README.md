@@ -12,6 +12,9 @@ then press enter and download the extension.
 
 How to:
 
+Run the installation script:
+Execute the "INSTALL" script and all the following steps will be done automatically.
+
 Update:
 Put the script in your bin, chmod it and put it in your .bashrc.
 
