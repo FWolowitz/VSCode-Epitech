@@ -1,3 +1,4 @@
+//Epitech C++ Snippets Francis Wolowitz
 {
 	"main": {
 		"prefix": "main",
@@ -31,7 +32,7 @@
 			"{",
 			"\t${4:Value} = ${3:New Value};",
 			"}"
-		]
+		],
 	},
 	"inti": {
 		"prefix": "inti",
