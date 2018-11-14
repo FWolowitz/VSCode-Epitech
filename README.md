@@ -3,17 +3,13 @@ VSCode Setup for Epitech
 
 Implement snippets for C++ files and for Makefiles in Visual Studio Code and an update script.
 
-Useful extensions:
-Download the Nicolas Polomack's extension in the marketplace
-Or
-Go in VSCode, press Ctr+P and paste
-ext install nicolaspolomack.epitech-c-cpp-headers
-then press enter and download the extension.
-
 How to:
 
-Run the installation script:
-Execute the "INSTALL" script and all the following steps will be done automatically.
+Run the installation script (Fedora only):
+Execute the "FEDORA_INSTALL.sh" script and enter your user's password.
+
+Run the setup script:
+Execute the "SETUP.sh" script and all the following steps will be done automatically.
 
 Update:
 Put the script in your bin, chmod it and put it in your .bashrc.
