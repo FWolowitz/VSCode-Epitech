@@ -1,5 +1,5 @@
 cp settings.json ~/.config/Code/User
-cp c.json ~/.config/Code/User
+cp c.json ~/.config/Code/User/snippets
 cp cpp.json ~/.config/Code/User/snippets
 cp makefile.json ~/.config/Code/User/snippets
 code --install-extension MS-CEINTL.vscode-language-pack-fr
