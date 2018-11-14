@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cp settings.json ~/.config/Code/User
 cp c.json ~/.config/Code/User/snippets
 cp cpp.json ~/.config/Code/User/snippets
